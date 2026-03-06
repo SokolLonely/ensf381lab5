@@ -2,22 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let currentYear = new Date().getFullYear();
+  var isLoggedIn = false;
+  //currentYear = currentYear.getFullYear();
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ENSF-381: Full Stack Web Development</h1>
+      <p>React Components</p>
+      <p>{isLoggedIn ? "welcome back": "please log in"}</p>
+    <p>{currentYear}</p>
     </div>
   );
 }
