@@ -8,8 +8,8 @@ function App() {
   const isLoggedIn = true;
 
   return (
-    <div>
-      <section>
+    <div  className="App">
+      <section className="App-header">
         <h1>ENSF-381: Full Stack Web Development</h1>
         <p>React Components</p>
         <p>{currentYear}</p>
